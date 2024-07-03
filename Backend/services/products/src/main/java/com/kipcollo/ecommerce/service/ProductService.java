@@ -28,13 +28,15 @@ public class ProductService {
         return repo.findById(id);
     }
 
-    public Product createNewProduct(Product productreq) {
+    public ObjectId createNewProduct(Product productreq) {
         repo.save(productreq);
-       return productreq;
+       return productreq.getId();
     }
 
-  
-    
-    
+    public Optional<ObjectId> deleteProduct(ObjectId id) {
+         repo.deleteById(id);
+        return Optional.of(id);
+        
+    }
 
 }
