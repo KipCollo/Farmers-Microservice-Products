@@ -1,10 +1,12 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
-import Home from './Components/home'
-import Signup from './Components/Signup'
-import Login from './Components/Login'
-import Payment from './Components/Payment'
-import Dashboard from './Components/Dashboard'
+import Home from './Components/Home/home'
+import Signup from './Components/Registration/Signup'
+import Login from './Components/Registration/Login'
+import Payment from './Components/Payments/Payment'
+import Dashboard from './Components/Dashboard/Dashboard'
+import Product from './Components/Products/Products'
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
   
     <BrowserRouter>
     <Routes>
+    <Route path='/product' Component={Product}></Route>
      <Route path='/register' Component={Signup}></Route>
      <Route path='/login' Component={Login}></Route>
      <Route path='/payment' Component={Payment}></Route>
