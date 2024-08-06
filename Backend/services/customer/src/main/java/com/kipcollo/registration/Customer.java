@@ -1,4 +1,4 @@
-package com.kipcollo.registration.data;
+package com.kipcollo.registration;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,12 +17,12 @@ import lombok.Setter;
 @Setter
 
 @Entity
-@Table(name = "customer")
-public class customer {
+@Table(name = "Customer")
+public class Customer {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private int customerId;
     private String firstName;
     private String lastName;
     private String email;
