@@ -1,6 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import { Route } from 'react-router-dom';
 
+
+<Route path='/login' element={<Login/>}></Route>
 function Login() {
     return(
         <>

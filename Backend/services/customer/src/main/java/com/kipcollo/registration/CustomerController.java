@@ -27,7 +27,12 @@ public class CustomerController {
     }
 
     @PostMapping
-    public ResponseEntity<Void> addCustomer(@RequestBody RequestBody requestBody){
-        return ResponseEntity.created(service.addCustomer(requestBody));
+    public ResponseEntity<Integer> addCustomer(@RequestBody RequestBody requestBody){
+        return ResponseEntity.ok(service.addCustomer(requestBody));
     }
+
+    // @DeleteMapping("/{customerId}")
+    // public ResponseEntity<Integer> deleteCustomer(@PathVariable int customerId){
+    //     return ResponseEntity.ok(service.deleteCustomer());
+    // }
 }

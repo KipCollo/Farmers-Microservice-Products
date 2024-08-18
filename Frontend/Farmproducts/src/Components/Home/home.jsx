@@ -11,11 +11,10 @@ function Home() {
         <Link to="/login">Login</Link><br/>
         <Link to="/register">Signup</Link><br/>
         <Link to="/payment">Payment</Link><br/>
-        <Link to="/product">Products</Link>
+        <Link to="/product">Products</Link><br/>
+        <Link to='/about'>About Us</Link><br />
+        <Link to="/contact">Contact Us</Link>
 
-{/* 
-        <Dashboard fname='maize' price='300' quantity='3'/>
-        <Dashboard fname='Beans' price='350' quantity='5'/> */}
         </div>
     )
     

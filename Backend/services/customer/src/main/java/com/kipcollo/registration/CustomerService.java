@@ -1,6 +1,5 @@
 package com.kipcollo.registration;
 
-import java.net.URI;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -22,8 +21,21 @@ public Customer getCustomerById(int customerId) {
     return repo.findById(customerId).orElseThrow();
 }
 
-public void addCustomer(RequestBody requestBody) {
-    repo.save(requestBody);
+public int addCustomer(RequestBody requestBody) {
+   Customer cust= repo.save(Customer
+    .builder()
+    .firstName("collo")
+    .email("collo")
+    .lastName("kosgei")
+    .address(null)
+    .build());
+
+    return cust.getCustomerId();
 }
+
+// public int deleteCustomer(int CustomerId) {
+//     repo.deleteById(CustomerId);
+//     return cust.id
+// }
 
 }
