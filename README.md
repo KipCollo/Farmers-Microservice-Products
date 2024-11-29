@@ -2,9 +2,9 @@
 
 ## Languages and Frameworks used
 
- **Frontend**: Javascript and React
- **Backend**: Java, Spring and Spring Boot
- **Databases**:MongoDB and Postgres
+-  **Frontend**: Javascript and Angular
+-  **Backend**: Java, Spring and Spring Boot
+- **Databases**:MongoDB and Postgres
 
 ## Backend(API)
 
@@ -20,6 +20,7 @@
 - Spring & SpingBoot for APIs
 - Docker
 - Kafka for Messaging
+- Flyway For Database migrations
 - ZipKin for Distributed Tracing
 
 ### Microservices distributed pattern empoyed
@@ -36,11 +37,6 @@
 ## Frontend
 
 ### Technologies employed
-
-- Axios for APIs fetching.
-- Docker: Dockerfile for creating image and dockering the frontend.
-- Vite: Build Tool.
-- React-router: For routing.
 
 ## Databases
 
