@@ -1,14 +1,14 @@
 package com.kipcollo.ecommerce.model;
 
-import java.math.BigDecimal;
+import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,18 +23,14 @@ import lombok.Setter;
 @Builder
 
 @Entity
-@Table(name="Product")
-public class Product {
+@Table(name="Category")
+public class Category {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int productId;
+    private int id;
     private String name;
     private String description;
-    private double availableQuantity;
-    private BigDecimal price;
-    @ManyToOne
-    @JoinColumn(name="categoryId")
-    private Category category;
-
+    @OneToMany(mappedBy = "category", cascade = CascadeType.REMOVE)
+    private List<Product> products;
 }
