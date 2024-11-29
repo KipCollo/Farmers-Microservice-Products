@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 
 import com.kipcollo.notifications.order.OrderConfirmation;
 import com.kipcollo.notifications.payment.PaymentConfirmation;
+private com.kipcollo.notifications.NotificationType;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

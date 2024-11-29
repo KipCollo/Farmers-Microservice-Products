@@ -17,7 +17,7 @@ public class CustomerMapper {
         return Customer.builder()
             .customerId(request.getCustomerId())
             .firstName(request.getFirstName())
-            .lastName(request.getLastName)
+            .lastName(request.getLastName())
             .email(request.getEmail())
             .location(request.getLocation())
            .build();
