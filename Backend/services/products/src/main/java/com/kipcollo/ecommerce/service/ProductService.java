@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.kipcollo.ecommerce.dto.ProductRequest;
@@ -24,10 +23,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ProductService {
 
-
-    @Autowired
-    private ProductRepository repo;
-    private ProductMapper mapper;
+    private final ProductRepository repo;
+    private final ProductMapper mapper;
 
     public List<ProductResponse> getAllProducts(){
         return repo.findAll()

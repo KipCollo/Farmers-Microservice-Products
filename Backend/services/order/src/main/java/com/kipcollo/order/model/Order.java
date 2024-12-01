@@ -32,7 +32,7 @@ import lombok.Setter;
 @NoArgsConstructor
 
 @Entity
-@Table(name="Orders")
+@Table(name="Order")
 @EntityListeners(AuditingEntityListener.class)
 public class Order {
 

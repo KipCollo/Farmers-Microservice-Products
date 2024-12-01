@@ -18,11 +18,14 @@ import com.kipcollo.customer.service.CustomerService;
 
 import jakarta.validation.Valid;
 
+import lombok.RequiredArgsConstructor;
+
 @RestController
 @RequestMapping("/api/customer")
+@RequiredArgsConstructor
 public class CustomerController {
 
-    private CustomerService service;
+    private final CustomerService service;
 
     @GetMapping
     public ResponseEntity<List<CustomerResponse>> getAllCustomers(){

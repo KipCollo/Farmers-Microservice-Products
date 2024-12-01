@@ -6,8 +6,11 @@ import com.kipcollo.order.dto.OrderRequest;
 import com.kipcollo.order.dto.OrderResponse;
 import com.kipcollo.order.model.Order;
 
+import lombok.RequiredArgsConstructor;
+
 @Service
-public class OrderMapper {
+@RequiredArgsConstructor
+public class OrderMapper{
 
     public Order toOrder(OrderRequest request){
         return Order.builder()

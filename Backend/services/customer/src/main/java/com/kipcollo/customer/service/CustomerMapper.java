@@ -6,7 +6,10 @@ import com.kipcollo.customer.dto.CustomerRequest;
 import com.kipcollo.customer.dto.CustomerResponse;
 import com.kipcollo.customer.model.Customer;
 
+import lombok.RequiredArgsConstructor;
+
 @Service
+@RequiredArgsConstructor
 public class CustomerMapper {
 
     public Customer toCustomer(CustomerRequest request){

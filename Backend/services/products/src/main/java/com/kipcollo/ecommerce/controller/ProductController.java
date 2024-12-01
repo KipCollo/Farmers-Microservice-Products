@@ -33,8 +33,7 @@ import com.kipcollo.ecommerce.dto.PurchasedProductResponse;
 @RequestMapping("/api")
 public class ProductController {
     
-    @Autowired
-    ProductService service;
+    private final ProductService service;
 
     @GetMapping("/products")
     public ResponseEntity<List<ProductResponse>> getAllProducts(){

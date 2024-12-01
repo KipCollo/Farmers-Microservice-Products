@@ -18,8 +18,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class CustomerService {
 
-    private CustomerRepository repo;
-    private CustomerMapper mapper;
+    private final CustomerRepository repo;
+    private final CustomerMapper mapper;
 
     public List<CustomerResponse> getAllCustomers() {
          return repo.findAll()

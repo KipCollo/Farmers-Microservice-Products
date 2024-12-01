@@ -1,13 +1,13 @@
-package com.kipcollo.kafka;
+package com.kipcollo.customer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KafkaApplication {
+public class CustomerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(KafkaApplication.class, args);
+		SpringApplication.run(CustomerApplication.class, args);
 	}
 
 }

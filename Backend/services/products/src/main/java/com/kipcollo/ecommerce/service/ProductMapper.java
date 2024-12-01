@@ -8,7 +8,9 @@ import com.kipcollo.ecommerce.dto.PurchasedProductResponse;
 import com.kipcollo.ecommerce.model.Category;
 import com.kipcollo.ecommerce.model.Product;
 
+import lombok.RequiredArgsConstructor;
 @Service
+@RequiredArgsConstructor
 public class ProductMapper {
 
     public Product toProduct(ProductRequest request){

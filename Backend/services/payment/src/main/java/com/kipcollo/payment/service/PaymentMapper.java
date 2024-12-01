@@ -5,7 +5,10 @@ import org.springframework.stereotype.Service;
 import com.kipcollo.payment.dto.PaymentRequest;
 import com.kipcollo.payment.model.Payment;
 
+import lombok.RequiredArgsConstructor;
+
 @Service
+@RequiredArgsConstructor
 public class PaymentMapper {
     public Payment toPayment(PaymentRequest request){
         return Payment.builder()

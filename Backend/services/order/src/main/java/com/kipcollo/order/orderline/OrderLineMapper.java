@@ -2,9 +2,12 @@ package com.kipcollo.order.orderline;
 
 import org.springframework.stereotype.Service;
 
+import lombok.RequiredArgsConstructor;
+
 import com.kipcollo.order.model.Order;
 
 @Service
+@RequiredArgsConstructor
 public class OrderLineMapper {
 
     public OrderLine toOrderLine(OrderLineRequest orderLineRequest){

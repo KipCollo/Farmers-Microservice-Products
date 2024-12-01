@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 
 import com.kipcollo.ecommerce.model.Product;
 
-
 @Repository
 public interface ProductRepository extends JpaRepository<Product,Integer>{
 
