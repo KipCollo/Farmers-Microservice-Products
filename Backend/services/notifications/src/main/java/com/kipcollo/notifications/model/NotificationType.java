@@ -1,4 +1,4 @@
-package com.kipcollo.notifications;
+package com.kipcollo.notifications.model;
 
 public enum NotificationType {
     ORDER_CONFIRMATION,

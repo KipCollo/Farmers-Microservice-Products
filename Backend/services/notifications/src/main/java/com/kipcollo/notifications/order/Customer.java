@@ -1,12 +1,17 @@
 package com.kipcollo.notifications.order;
 
-public record Customer(
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-    String id,
-    String firstName,
-    String lastName,
-    String email
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Customer{
 
-) {
+    private String id;
+    private String firstName;
+    private String lastName;
+    private String email;
 
 }

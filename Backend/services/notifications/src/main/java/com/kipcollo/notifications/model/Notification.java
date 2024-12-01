@@ -1,24 +1,33 @@
-package com.kipcollo.notifications;
+package com.kipcollo.notifications.model;
 
 import java.time.LocalDateTime;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import com.kipcollo.notifications.order.OrderConfirmation;
 import com.kipcollo.notifications.payment.PaymentConfirmation;
-private com.kipcollo.notifications.NotificationType;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
+
+@Document
 public class Notification {
 
-    private String id;
+    @Id
+    private String nofificationId;
     private NotificationType type;
-    private LocalDateTime notificationFTime;
-    private OrderConfirmation OrderConfirmation;
-    private PaymentConfirmation PaymentConfirmation;
+    private LocalDateTime notificationTime;
+    private OrderConfirmation orderConfirmation;
+    private PaymentConfirmation paymentConfirmation;
 
 }
