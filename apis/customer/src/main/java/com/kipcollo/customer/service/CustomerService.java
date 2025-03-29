@@ -40,7 +40,7 @@ public class CustomerService {
                 String.format("Customer not found with provided ID:: %s",customerId)));
     }
 
-    public String addCustomer(CustomerRequest request) {
+    public String createCustomer(CustomerRequest request) {
         Customer customer= repo.save(mapper.toCustomer(request));
         return customer.getCustomerId();
      
@@ -76,8 +76,6 @@ public class CustomerService {
 
     public void deleteCustomer(String customerId) {
         repo.deleteById(customerId);
-
         }
-
 
 }

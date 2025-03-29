@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/apis/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/apis/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/apis/customer/pom.xml" />
+        <option value="$PROJECT_DIR$/apis/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/apis/products/pom.xml" />
+        <option value="$PROJECT_DIR$/apis/order/pom.xml" />
+        <option value="$PROJECT_DIR$/apis/payment/pom.xml" />
+        <option value="$PROJECT_DIR$/apis/notifications/pom.xml" />
+      </list>
+    </option>
+  </component>
   <component name="PWA">
     <option name="enabled" value="true" />
     <option name="wasEnabledAtLeastOnce" value="true" />

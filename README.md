@@ -2,8 +2,8 @@
 
 ## Languages and Frameworks used
 
--  **Frontend**: Javascript and Angular
--  **Backend**: Java, Spring and Spring Boot
+- **Frontend**: Javascript,tailwind and Angular
+- **Backend**: Java, Spring and Spring Boot
 - **Databases**:MongoDB and Postgres
 
 ## Backend(API)
@@ -35,6 +35,8 @@
 - Setup infrasructure and required tools with Docker and Docker Compose.
 
 ## Frontend
+
+- Used Angular framework and tailwind library
 
 ### Technologies employed
 

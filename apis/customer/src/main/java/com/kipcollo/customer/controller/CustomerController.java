@@ -43,8 +43,8 @@ public class CustomerController {
     }
 
     @PostMapping
-    public ResponseEntity<String> addCustomer(@RequestBody @Valid CustomerRequest request){
-        return ResponseEntity.ok(service.addCustomer(request));
+    public ResponseEntity<String> createCustomer(@RequestBody @Valid CustomerRequest request){
+        return ResponseEntity.ok(service.createCustomer(request));
     }
 
     @PutMapping
